@@ -296,7 +296,7 @@ run_log_dir = "run_logs"
 run_log_fname = "{}.json".format(args.dataset)
 run_log_fpath = os.path.join(run_log_dir, run_log_fname)
 
-
+print(f'VERSION NOT USE UNSMOOTH LOSS')
 for epoch in range(1, config.num_epochs + 1):
     epoch_start_time = time.time()
 
