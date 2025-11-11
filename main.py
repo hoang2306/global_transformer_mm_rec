@@ -344,7 +344,7 @@ for epoch in range(1, config.num_epochs + 1):
                     torch.zeros([batch_edges.size(0)], dtype=torch.long, device=device),
                     reduction="none",
                 ).sum()
-                loss = loss + unsmooth_loss
+                # loss = loss + unsmooth_loss
 
             optimizer.zero_grad()
             loss.backward()
